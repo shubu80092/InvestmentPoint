@@ -1,0 +1,95 @@
+﻿@using InvestmentPoint.Admin.Domain.Entites
+@model IEnumerable<Customer>
+@{
+    ViewData["Title"] = "ListCustomer";
+    Layout = "~/Views/Shared/Master/_AdminLayout.cshtml";
+}
+
+
+<div class="content-header">
+    <div class="container-fluid">
+        <div class="row mb-2">
+            <div class="col-sm-6">
+                <h1 class="m-0">Employee</h1>
+            </div><!-- /.col -->
+            <div class="col-sm-6">
+                <ol class="breadcrumb float-sm-right">
+                    <li class="breadcrumb-item"><a href="#">Employee</a></li>
+                    <li class="breadcrumb-item active">ListEmployee</li>
+                </ol>
+            </div><!-- /.col -->
+        </div><!-- /.row -->
+    </div><!-- /.container-fluid -->
+</div>
+<div class="card">
+    <div class="card-header">
+        <h3 class="card-title">Employee - List</h3>
+
+        <div class="card-tools">
+            <button type="button" class="btn btn-tool" data-card-widget="collapse" title="Collapse">
+                <i class="fas fa-minus"></i>
+            </button>
+            <button type="button" class="btn btn-tool" data-card-widget="remove" title="Remove">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+    </div>
+    <div class="card-body p-0">
+        <table class="table table-striped projects">
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Mobile No.</th>
+                    <th>Aadhar No.</th>
+                    <th>Pan No.</th>
+                    <th>Area No.</th>
+                    <th>Address</th>
+                    <th>Type Of Investment</th>
+                    <th>Monthly Ammount</th>
+                    <th>Collection Ammount</th>
+                    <th>Ammount No.</th>
+                    <th>Password</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                @{
+                    int index = 0;
+                }
+                @foreach(var item in Model)
+                {
+                    index++;
+                    <tr>
+                        <td>@index</td>
+                        <td>@item.Name</td>
+                        <td>@item.Email</td>
+                        <td>@item.MobileNo</td>
+                        <td>@item.AadharNo</td>
+                        <td>@item.PanNo</td>
+                        <td>@item.Area</td>
+                        <td>@item.Address</td>
+                        <td>@item.TypeOfInvestment</td>
+                        <td>@item.MonthlyAmount</td>
+                        <td>@item.CollectionAmount</td>
+                        <td>@item.AccountNumber</td>
+                        <td>@item.Password</td>
+                        <td>
+                            <a class="btn btn-info btn-sm" href="@Url.Action("EditEmployee","Employee", new{Id = item.Id})">
+                                <i class="fas fa-pencil-alt">
+                                </i>
+                                Edit
+                            </a>
+                            <a class="btn btn-danger btn-sm" href="@Url.Action("DeleteEmployee","Employee", new{Id=item.Id})">
+                                <i class="fas fa-trash">
+                                </i>
+                                Delete
+                            </a>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>

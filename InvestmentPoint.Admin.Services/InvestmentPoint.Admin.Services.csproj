@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\InvestmentPoint.Admin.Domain\InvestmentPoint.Admin.Domain.csproj" />
+    <ProjectReference Include="..\InvestmentPoint.Admin.Persistence\InvestmentPoint.Admin.Persistence.csproj" />
+  </ItemGroup>
+
+</Project>

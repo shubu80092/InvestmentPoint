@@ -1,0 +1,51 @@
+﻿@using InvestmentPoint.Admin.Domain.Common
+@model EmployeeModel
+@{
+    ViewData["Title"] = "AddEmployee";
+    Layout = "~/Views/Shared/Master/_AdminLayout.cshtml";
+}
+
+<div class="content-header">
+    <div class="container-fluid">
+        <div class="row mb-2">
+            <div class="col-sm-6">
+                <h1 class="m-0">Employee</h1>
+            </div><!-- /.col -->
+            <div class="col-sm-6">
+                <ol class="breadcrumb float-sm-right">
+                    <li class="breadcrumb-item"><a href="#">Employee</a></li>
+                    <li class="breadcrumb-item active">AddEmployee</li>
+                </ol>
+            </div><!-- /.col -->
+        </div><!-- /.row -->
+    </div><!-- /.container-fluid -->
+</div>
+<form method="post">
+    <div class="card-body">
+        <div class="form-group">
+            <label for="exampleInputName1" asp-for="Name"></label>
+            <input type="text" asp-for="Name" class="form-control" id="exampleInputName1" placeholder="Name">
+        </div>
+        <div class="form-group">
+            <label for="exampleInputEmail1" asp-for="Email"></label>
+            <input type="text" asp-for="Email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+        </div>
+        <div class="form-group">
+            <label asp-for="MobileNo"></label>
+            <input type="text" asp-for="MobileNo" class="form-control" placeholder="Mobile No">
+        </div>
+        <div class="form-group">
+            <label asp-for="AadharNo"></label>
+            <input type="text" asp-for="AadharNo" class="form-control" placeholder="Aadhar No">
+        </div>
+        <div class="form-group">
+            <label for="exampleInputPassword1" asp-for="Password"></label>
+            <input type="Password" asp-for="Password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+        </div>
+    </div>
+    <!-- /.card-body -->
+
+    <div class="card-footer">
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </div>
+</form>

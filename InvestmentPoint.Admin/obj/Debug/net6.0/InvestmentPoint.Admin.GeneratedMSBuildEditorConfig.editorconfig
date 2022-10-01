@@ -1,0 +1,100 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = InvestmentPoint.Admin
+build_property.RootNamespace = InvestmentPoint.Admin
+build_property.ProjectDir = C:\New Project\Shubu Code\InvestmentGithub\shubu80092\InvestmentPoint\InvestmentPoint.Admin\
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\New Project\Shubu Code\InvestmentGithub\shubu80092\InvestmentPoint\InvestmentPoint.Admin
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/New Project/Shubu Code/InvestmentGithub/shubu80092/InvestmentPoint/InvestmentPoint.Admin/Views/Account/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxMb2dpbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/New Project/Shubu Code/InvestmentGithub/shubu80092/InvestmentPoint/InvestmentPoint.Admin/Views/Admin/Dashboard.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cRGFzaGJvYXJkLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/New Project/Shubu Code/InvestmentGithub/shubu80092/InvestmentPoint/InvestmentPoint.Admin/Views/Area/AddArea.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXJlYVxBZGRBcmVhLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/New Project/Shubu Code/InvestmentGithub/shubu80092/InvestmentPoint/InvestmentPoint.Admin/Views/Area/ListArea.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXJlYVxMaXN0QXJlYS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/New Project/Shubu Code/InvestmentGithub/shubu80092/InvestmentPoint/InvestmentPoint.Admin/Views/Customer/AddCustomer.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3VzdG9tZXJcQWRkQ3VzdG9tZXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/New Project/Shubu Code/InvestmentGithub/shubu80092/InvestmentPoint/InvestmentPoint.Admin/Views/Customer/ListCustomer.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3VzdG9tZXJcTGlzdEN1c3RvbWVyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/New Project/Shubu Code/InvestmentGithub/shubu80092/InvestmentPoint/InvestmentPoint.Admin/Views/Employee/AddEmployee.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1wbG95ZWVcQWRkRW1wbG95ZWUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/New Project/Shubu Code/InvestmentGithub/shubu80092/InvestmentPoint/InvestmentPoint.Admin/Views/Employee/ListEmployee.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1wbG95ZWVcTGlzdEVtcGxveWVlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/New Project/Shubu Code/InvestmentGithub/shubu80092/InvestmentPoint/InvestmentPoint.Admin/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/New Project/Shubu Code/InvestmentGithub/shubu80092/InvestmentPoint/InvestmentPoint.Admin/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/New Project/Shubu Code/InvestmentGithub/shubu80092/InvestmentPoint/InvestmentPoint.Admin/Views/InvestmentType/AddInvestType.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW52ZXN0bWVudFR5cGVcQWRkSW52ZXN0VHlwZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/New Project/Shubu Code/InvestmentGithub/shubu80092/InvestmentPoint/InvestmentPoint.Admin/Views/InvestmentType/ListInvestType.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW52ZXN0bWVudFR5cGVcTGlzdEludmVzdFR5cGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/New Project/Shubu Code/InvestmentGithub/shubu80092/InvestmentPoint/InvestmentPoint.Admin/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/New Project/Shubu Code/InvestmentGithub/shubu80092/InvestmentPoint/InvestmentPoint.Admin/Views/Shared/Master/Footer.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXE1hc3RlclxGb290ZXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/New Project/Shubu Code/InvestmentGithub/shubu80092/InvestmentPoint/InvestmentPoint.Admin/Views/Shared/Master/Header.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXE1hc3RlclxIZWFkZXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/New Project/Shubu Code/InvestmentGithub/shubu80092/InvestmentPoint/InvestmentPoint.Admin/Views/Shared/Master/Sidebar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXE1hc3RlclxTaWRlYmFyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/New Project/Shubu Code/InvestmentGithub/shubu80092/InvestmentPoint/InvestmentPoint.Admin/Views/Shared/Master/_AdminLayout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXE1hc3RlclxfQWRtaW5MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/New Project/Shubu Code/InvestmentGithub/shubu80092/InvestmentPoint/InvestmentPoint.Admin/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/New Project/Shubu Code/InvestmentGithub/shubu80092/InvestmentPoint/InvestmentPoint.Admin/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/New Project/Shubu Code/InvestmentGithub/shubu80092/InvestmentPoint/InvestmentPoint.Admin/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/New Project/Shubu Code/InvestmentGithub/shubu80092/InvestmentPoint/InvestmentPoint.Admin/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-rl44aegn7t
