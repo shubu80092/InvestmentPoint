@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "4Wxce71bBJSnhu6JdqGk2CAQ1RlARKJMBqM6DRMI6U5l+qWqklU7op10h8GVowUn6rwW0uZfvKnQHnVcuh7NTw==",
+  "dgSpecHash": "zR9MHJ1acLsPfxChrLjQnqOY1/78nD7KaHpScPRjAy9Qz2WywzvlxNTbheUmjVCiNphyygnXSvk66rlqbw19tQ==",
   "success": true,
-  "projectFilePath": "C:\\New Project\\Shubu Code\\InvestmentGithub\\shubu80092\\InvestmentPoint\\InvestmentPoint.Admin\\InvestmentPoint.Admin.csproj",
+  "projectFilePath": "C:\\New Project\\Shubu Code\\InvestmentPointGit\\InvestmentPoint.Admin\\InvestmentPoint.Admin.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\USER-3\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\USER-3\\.nuget\\packages\\messagepack\\2.1.152\\messagepack.2.1.152.nupkg.sha512",

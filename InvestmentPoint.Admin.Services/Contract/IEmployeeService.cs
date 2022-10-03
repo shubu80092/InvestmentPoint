@@ -13,7 +13,7 @@ namespace InvestmentPoint.Admin.Services.Contract
         public Task<bool> AddEmployee(EmployeeModel model);
 
         public Task<bool> EditEmployee(int id,EmployeeModel model);
-        public Task<IEnumerable> ListEmployee();
+        public Task<List<EmployeeModel>> ListEmployee();
         public Task<bool> DeleteEmployee(int id);
     }
 }

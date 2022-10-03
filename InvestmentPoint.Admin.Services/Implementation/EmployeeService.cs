@@ -42,6 +42,7 @@ namespace InvestmentPoint.Admin.Services.Implementation
                         MobileNo = model.MobileNo,
                         Email = model.Email,
                         AadharNo = model.AadharNo,
+                        AreaId = model.AreaId,
                         Password = model.Password
                     };
                     await _context.Employees.AddAsync(employee);
@@ -107,6 +108,7 @@ namespace InvestmentPoint.Admin.Services.Implementation
                         employee.Email = model.Email;
                         employee.MobileNo = model.MobileNo;
                         employee.AadharNo = model.AadharNo;
+                        employee.AreaId = model.AreaId;
                         employee.Password = model.Password;
                        
                     }
@@ -128,11 +130,23 @@ namespace InvestmentPoint.Admin.Services.Implementation
         /// </summary>
         /// <returns></returns>
         /// <exception cref="Exception"></exception>
-        public async Task<IEnumerable> ListEmployee()
+        public async Task<List<EmployeeModel>> ListEmployee()
         {
             try
             {
-                var list = await _context.Employees.ToListAsync();
+                //var list = await _context.Employees.ToListAsync();
+                var list = await (from e in _context.Employees
+                                  join a in _context.Areas on e.AreaId equals a.Id
+                                  select new EmployeeModel
+                                  {
+                                      Id = e.Id,
+                                      Name = e.Name,
+                                      Email = e.Email,
+                                      MobileNo = e.MobileNo,
+                                      AadharNo = e.AadharNo,
+                                      AreaName = a.AreaName,
+                                      Password = e.Password
+                                  }).ToListAsync();
                 return list;
             }
             catch (Exception ex)

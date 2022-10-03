@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "5vB10HmSagGFyC499/7RfuzmKlxFXORczqEI0im9NubAOe/1DgLF/USsEXiD8tHnZVexkXq7D41sY1F7OqPzgQ==",
+  "dgSpecHash": "/if1x4Onx0PV4vcOMg+8rv/LomNV+s5hbMue33VjlFSjgxckTzUdp+HLkbKqpkKjixWf8eyMI3DYmuzCRbG7Iw==",
   "success": true,
-  "projectFilePath": "C:\\New Project\\Shubu Code\\InvestmentGithub\\shubu80092\\InvestmentPoint\\InvestmentPoint.Admin.Services\\InvestmentPoint.Admin.Services.csproj",
+  "projectFilePath": "C:\\New Project\\Shubu Code\\InvestmentPointGit\\InvestmentPoint.Admin.Services\\InvestmentPoint.Admin.Services.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\USER-3\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\6.0.9\\microsoft.aspnetcore.cryptography.internal.6.0.9.nupkg.sha512",
     "C:\\Users\\USER-3\\.nuget\\packages\\microsoft.aspnetcore.cryptography.keyderivation\\6.0.9\\microsoft.aspnetcore.cryptography.keyderivation.6.0.9.nupkg.sha512",

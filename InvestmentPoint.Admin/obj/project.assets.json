@@ -10050,11 +10050,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\New Project\\Shubu Code\\InvestmentGithub\\shubu80092\\InvestmentPoint\\InvestmentPoint.Admin\\InvestmentPoint.Admin.csproj",
+      "projectUniqueName": "C:\\New Project\\Shubu Code\\InvestmentPointGit\\InvestmentPoint.Admin\\InvestmentPoint.Admin.csproj",
       "projectName": "InvestmentPoint.Admin",
-      "projectPath": "C:\\New Project\\Shubu Code\\InvestmentGithub\\shubu80092\\InvestmentPoint\\InvestmentPoint.Admin\\InvestmentPoint.Admin.csproj",
+      "projectPath": "C:\\New Project\\Shubu Code\\InvestmentPointGit\\InvestmentPoint.Admin\\InvestmentPoint.Admin.csproj",
       "packagesPath": "C:\\Users\\USER-3\\.nuget\\packages\\",
-      "outputPath": "C:\\New Project\\Shubu Code\\InvestmentGithub\\shubu80092\\InvestmentPoint\\InvestmentPoint.Admin\\obj\\",
+      "outputPath": "C:\\New Project\\Shubu Code\\InvestmentPointGit\\InvestmentPoint.Admin\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\USER-3\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -10071,14 +10071,14 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\New Project\\Shubu Code\\InvestmentGithub\\shubu80092\\InvestmentPoint\\InvestmentPoint.Admin.Domain\\InvestmentPoint.Admin.Domain.csproj": {
-              "projectPath": "C:\\New Project\\Shubu Code\\InvestmentGithub\\shubu80092\\InvestmentPoint\\InvestmentPoint.Admin.Domain\\InvestmentPoint.Admin.Domain.csproj"
+            "C:\\New Project\\Shubu Code\\InvestmentPointGit\\InvestmentPoint.Admin.Domain\\InvestmentPoint.Admin.Domain.csproj": {
+              "projectPath": "C:\\New Project\\Shubu Code\\InvestmentPointGit\\InvestmentPoint.Admin.Domain\\InvestmentPoint.Admin.Domain.csproj"
             },
-            "C:\\New Project\\Shubu Code\\InvestmentGithub\\shubu80092\\InvestmentPoint\\InvestmentPoint.Admin.Persistence\\InvestmentPoint.Admin.Persistence.csproj": {
-              "projectPath": "C:\\New Project\\Shubu Code\\InvestmentGithub\\shubu80092\\InvestmentPoint\\InvestmentPoint.Admin.Persistence\\InvestmentPoint.Admin.Persistence.csproj"
+            "C:\\New Project\\Shubu Code\\InvestmentPointGit\\InvestmentPoint.Admin.Persistence\\InvestmentPoint.Admin.Persistence.csproj": {
+              "projectPath": "C:\\New Project\\Shubu Code\\InvestmentPointGit\\InvestmentPoint.Admin.Persistence\\InvestmentPoint.Admin.Persistence.csproj"
             },
-            "C:\\New Project\\Shubu Code\\InvestmentGithub\\shubu80092\\InvestmentPoint\\InvestmentPoint.Admin.Services\\InvestmentPoint.Admin.Services.csproj": {
-              "projectPath": "C:\\New Project\\Shubu Code\\InvestmentGithub\\shubu80092\\InvestmentPoint\\InvestmentPoint.Admin.Services\\InvestmentPoint.Admin.Services.csproj"
+            "C:\\New Project\\Shubu Code\\InvestmentPointGit\\InvestmentPoint.Admin.Services\\InvestmentPoint.Admin.Services.csproj": {
+              "projectPath": "C:\\New Project\\Shubu Code\\InvestmentPointGit\\InvestmentPoint.Admin.Services\\InvestmentPoint.Admin.Services.csproj"
             }
           }
         }

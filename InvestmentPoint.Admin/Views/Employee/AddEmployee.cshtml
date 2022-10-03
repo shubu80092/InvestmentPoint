@@ -38,6 +38,10 @@
             <label asp-for="AadharNo"></label>
             <input type="text" asp-for="AadharNo" class="form-control" placeholder="Aadhar No">
         </div>
+          <div class="form-group">
+            <label for="exampleInputAreaId1" asp-for="AreaId">Area</label>
+            <select name="AreaId" class="form-control" asp-items="@ViewBag.Area"></select>
+        </div>
         <div class="form-group">
             <label for="exampleInputPassword1" asp-for="Password"></label>
             <input type="Password" asp-for="Password" class="form-control" id="exampleInputPassword1" placeholder="Password">

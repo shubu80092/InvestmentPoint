@@ -1,15 +1,20 @@
 ﻿using InvestmentPoint.Admin.Domain.Common;
+using InvestmentPoint.Admin.Persistence;
 using InvestmentPoint.Admin.Services.Contract;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Rendering;
+using Microsoft.EntityFrameworkCore;
 
 namespace InvestmentPoint.Admin.Controllers
 {
     public class CustomerController : Controller
     {
+        private readonly ApplicationDbContext _context;
         private readonly ICustomerService _customer;
-        public CustomerController(ICustomerService customer)
+        public CustomerController(ICustomerService customer, ApplicationDbContext context)
         {
             _customer = customer;
+            _context = context;
         }
 
         public async Task<IActionResult> ListCustomer()
@@ -29,6 +34,8 @@ namespace InvestmentPoint.Admin.Controllers
         {
             try
             {
+                ViewBag.Area = new SelectList(_context.Areas.ToList(), "Id", "AreaName");
+                ViewBag.Investment = new SelectList(_context.TypeofInvestments.ToList(), "Id", "InvestmentName");
                 return View();
             }
             catch (Exception ex)
@@ -42,6 +49,8 @@ namespace InvestmentPoint.Admin.Controllers
         {
             try
             {
+                ViewBag.Area = new SelectList(_context.Areas.ToList(), "Id", "AreaName");
+                ViewBag.Investment = new SelectList(_context.TypeofInvestments.ToList(), "Id", "InvestmentName");
                 if (ModelState.IsValid)
                 {
                     bool check = await _customer.AddCustomer(model);

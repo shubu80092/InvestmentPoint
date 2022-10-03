@@ -45,8 +45,8 @@ namespace InvestmentPoint.Admin.Persistence.Migrations.ApplicationDb
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
 
-                    b.Property<int>("AadharNo")
-                        .HasColumnType("int");
+                    b.Property<string>("AadharNo")
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("AccountNumber")
                         .HasColumnType("nvarchar(max)");
@@ -63,8 +63,8 @@ namespace InvestmentPoint.Admin.Persistence.Migrations.ApplicationDb
                     b.Property<string>("Email")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int>("MobileNo")
-                        .HasColumnType("int");
+                    b.Property<string>("MobileNo")
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("MonthlyAmount")
                         .HasColumnType("nvarchar(max)");
@@ -94,14 +94,17 @@ namespace InvestmentPoint.Admin.Persistence.Migrations.ApplicationDb
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
 
-                    b.Property<int>("AadharNo")
+                    b.Property<string>("AadharNo")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("AreaId")
                         .HasColumnType("int");
 
                     b.Property<string>("Email")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int>("MobileNo")
-                        .HasColumnType("int");
+                    b.Property<string>("MobileNo")
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Name")
                         .HasColumnType("nvarchar(max)");

@@ -10,12 +10,12 @@
     <div class="container-fluid">
         <div class="row mb-2">
             <div class="col-sm-6">
-                <h1 class="m-0">Employee</h1>
+                <h1 class="m-0">Customer</h1>
             </div><!-- /.col -->
             <div class="col-sm-6">
                 <ol class="breadcrumb float-sm-right">
-                    <li class="breadcrumb-item"><a href="#">Employee</a></li>
-                    <li class="breadcrumb-item active">ListEmployee</li>
+                    <li class="breadcrumb-item"><a href="#">Customer</a></li>
+                    <li class="breadcrumb-item active">AddCustomer</li>
                 </ol>
             </div><!-- /.col -->
         </div><!-- /.row -->
@@ -44,8 +44,8 @@
             <input type="text" asp-for="PanNo" class="form-control" id="exampleInputPanNo1" placeholder="Pan No">
         </div>
         <div class="form-group">
-            <label for="exampleInputArea1" asp-for="Area"></label>
-            <input type="text" asp-for="Area" class="form-control" id="exampleInputArea1" placeholder="Area">
+            <label for="exampleInputArea1" asp-for="Area">Area</label>
+            <select name="Area" class="form-control" asp-items="@ViewBag.Area" placeholder="---Select Area---"></select>
         </div>
         <div class="form-group">
             <label for="exampleInputAddress1" asp-for="Address"></label>
@@ -53,11 +53,7 @@
         </div>
         <div class="form-group">
             <label for="exampleInputTypeOfInvestment1" asp-for="TypeOfInvestment"></label>
-            <input type="text" asp-for="TypeOfInvestment" class="form-control" id="exampleInputTypeOfInvestment1" placeholder="Type Of Investment">
-        </div>
-        <div class="form-group">
-            <label for="exampleInputMonthlyAmount1" asp-for="MonthlyAmount"></label>
-            <input type="text" asp-for="MonthlyAmount" class="form-control" id="exampleInputMonthlyAmount1" placeholder="Monthly Amount">
+            <select name="TypeOfInvestment" class="form-control" asp-items="@ViewBag.Investment" ,"---Select Type Of Investment---",></select>
         </div>
         <div class="form-group">
             <label for="exampleInputMonthlyAmount1" asp-for="MonthlyAmount"></label>

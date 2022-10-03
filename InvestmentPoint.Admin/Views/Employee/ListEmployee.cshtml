@@ -1,5 +1,5 @@
-﻿@using InvestmentPoint.Admin.Domain.Entites
-@model IEnumerable<Employee>
+﻿@using InvestmentPoint.Admin.Domain.Common
+@model IEnumerable<EmployeeModel>
 @{
     ViewData["Title"] = "ListEmployee";
     Layout = "~/Views/Shared/Master/_AdminLayout.cshtml";
@@ -42,6 +42,7 @@
                     <th>Email</th>
                     <th>Mobile No.</th>
                     <th>Aadhar No.</th>
+                    <th>Area Name</th>
                     <th>Password</th>
                     <th>Action</th>
                 </tr>
@@ -59,6 +60,7 @@
                         <td>@item.Email</td>
                         <td>@item.MobileNo</td>
                         <td>@item.AadharNo</td>
+                        <td>@item.AreaName</td>
                         <td>@item.Password</td>
                         <td>
                             <a class="btn btn-info btn-sm" href="@Url.Action("EditEmployee","Employee", new{Id = item.Id})">

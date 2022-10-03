@@ -1,8 +1,10 @@
 ﻿using InvestmentPoint.Admin.Domain.Common;
+using InvestmentPoint.Admin.Domain.Entites;
 using InvestmentPoint.Admin.Persistence;
 using InvestmentPoint.Admin.Services.Contract;
 using Microsoft.AspNetCore.Components.Web;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using System.Reflection.Metadata.Ecma335;
 
@@ -48,6 +50,7 @@ namespace InvestmentPoint.Admin.Controllers
         {
             try
             {
+                ViewBag.Area = new SelectList(_context.Areas.ToList(), "Id", "AreaName");
                 return View();
             }
             catch (Exception ex)
@@ -61,6 +64,7 @@ namespace InvestmentPoint.Admin.Controllers
         {
             try
             {
+                ViewBag.Area = new SelectList(_context.Areas.ToList(), "Id", "AreaName");
                 if (ModelState.IsValid)
                 {
                    bool check = await _employee.AddEmployee(employee);

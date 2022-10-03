@@ -11,8 +11,10 @@ namespace InvestmentPoint.Admin.Domain.Common
         public int Id { get; set; }
         public string Name { get; set; }
         public string Email { get; set; }
-        public int MobileNo { get; set; }
-        public int AadharNo { get; set; }
+        public string MobileNo { get; set; }
+        public string AadharNo { get; set; }
+        public int AreaId { get; set; }
+        public string AreaName { get; set; }
         public string Password { get; set; }
     }
 }

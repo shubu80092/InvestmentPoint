@@ -824,11 +824,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\New Project\\Shubu Code\\InvestmentGithub\\shubu80092\\InvestmentPoint\\InvestmentPoint.Admin.Domain\\InvestmentPoint.Admin.Domain.csproj",
+      "projectUniqueName": "C:\\New Project\\Shubu Code\\InvestmentPointGit\\InvestmentPoint.Admin.Domain\\InvestmentPoint.Admin.Domain.csproj",
       "projectName": "InvestmentPoint.Admin.Domain",
-      "projectPath": "C:\\New Project\\Shubu Code\\InvestmentGithub\\shubu80092\\InvestmentPoint\\InvestmentPoint.Admin.Domain\\InvestmentPoint.Admin.Domain.csproj",
+      "projectPath": "C:\\New Project\\Shubu Code\\InvestmentPointGit\\InvestmentPoint.Admin.Domain\\InvestmentPoint.Admin.Domain.csproj",
       "packagesPath": "C:\\Users\\USER-3\\.nuget\\packages\\",
-      "outputPath": "C:\\New Project\\Shubu Code\\InvestmentGithub\\shubu80092\\InvestmentPoint\\InvestmentPoint.Admin.Domain\\obj\\",
+      "outputPath": "C:\\New Project\\Shubu Code\\InvestmentPointGit\\InvestmentPoint.Admin.Domain\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\USER-3\\AppData\\Roaming\\NuGet\\NuGet.Config",
