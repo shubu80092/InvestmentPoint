@@ -10,5 +10,7 @@ namespace InvestmentPoint.Admin.Domain.Entites
 {
     public class User : IdentityUser
     {
+        public string Name { get; set; }
+        public string ProfilePicture { get; set; }
     }
 }

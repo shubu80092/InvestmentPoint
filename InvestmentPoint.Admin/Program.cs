@@ -19,6 +19,8 @@ builder.Services.AddDbContext<ApplicationDbContext>(options =>
 builder.Services.AddIdentity<User, IdentityRole>()
     .AddEntityFrameworkStores<IdentityTestContext>();
 
+builder.Services.ConfigureApplicationCookie(op => op.LoginPath = "Account/Login");
+
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 
@@ -26,6 +28,7 @@ builder.Services.AddTransient<IEmployeeService, EmployeeService>();
 builder.Services.AddTransient<ICustomerService, CustomerService>();
 builder.Services.AddTransient<IAreaService, AreaService>();
 builder.Services.AddTransient<IInvestTypeServicecs, InvestTypeServicecs>();
+builder.Services.AddTransient<IAccountService, AccountService>();
 
 var app = builder.Build();
 
