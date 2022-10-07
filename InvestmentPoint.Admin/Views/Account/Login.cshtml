@@ -31,7 +31,7 @@
 
                 <form method="post">
                     <div class="input-group mb-3">
-                        <input type="email" asp-for="Username" class="form-control" placeholder="Email">
+                        <input type="text" asp-for="Username" class="form-control" placeholder="Username">
                         <div class="input-group-append">
                             <div class="input-group-text">
                                 <span class="fas fa-envelope"></span>
@@ -46,6 +46,11 @@
                             </div>
                         </div>
                     </div>
+                    @if(TempData["msg"]!=null){
+                        <div class="text-danger">
+                            @TempData["msg"]
+                        </div>
+                    }
                     <div class="row">
                         <div class="col-8">
                             <div class="icheck-primary">

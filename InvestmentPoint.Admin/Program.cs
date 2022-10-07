@@ -19,7 +19,7 @@ builder.Services.AddDbContext<ApplicationDbContext>(options =>
 builder.Services.AddIdentity<User, IdentityRole>()
     .AddEntityFrameworkStores<IdentityTestContext>();
 
-builder.Services.ConfigureApplicationCookie(op => op.LoginPath = "Account/Login");
+builder.Services.ConfigureApplicationCookie(op => op.LoginPath = "/Account/Login");
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();

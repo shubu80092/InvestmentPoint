@@ -690,3 +690,17 @@ C:\New Project\Shubu Code\InvestmentPointGit\InvestmentPoint.Admin\obj\Debug\net
 C:\New Project\Shubu Code\InvestmentPointGit\InvestmentPoint.Admin\obj\Debug\net6.0\InvestmentPoint.Admin.pdb
 C:\New Project\Shubu Code\InvestmentPointGit\InvestmentPoint.Admin\obj\Debug\net6.0\InvestmentPoint.Admin.genruntimeconfig.cache
 C:\New Project\Shubu Code\InvestmentPointGit\InvestmentPoint.Admin\obj\Debug\net6.0\ref\InvestmentPoint.Admin.dll
+C:\New Project\Shubu Code\InvestmentPointGit\InvestmentPoint.Admin\bin\Debug\net6.0\InvestmentPoint.Admin.App.deps.json
+C:\New Project\Shubu Code\InvestmentPointGit\InvestmentPoint.Admin\bin\Debug\net6.0\InvestmentPoint.Admin.App.runtimeconfig.json
+C:\New Project\Shubu Code\InvestmentPointGit\InvestmentPoint.Admin\bin\Debug\net6.0\InvestmentPoint.Admin.App.staticwebassets.runtime.json
+C:\New Project\Shubu Code\InvestmentPointGit\InvestmentPoint.Admin\bin\Debug\net6.0\InvestmentPoint.Admin.App.exe
+C:\New Project\Shubu Code\InvestmentPointGit\InvestmentPoint.Admin\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\New Project\Shubu Code\InvestmentPointGit\InvestmentPoint.Admin\bin\Debug\net6.0\Microsoft.AspNetCore.Identity.UI.dll
+C:\New Project\Shubu Code\InvestmentPointGit\InvestmentPoint.Admin\bin\Debug\net6.0\Microsoft.Extensions.FileProviders.Embedded.dll
+C:\New Project\Shubu Code\InvestmentPointGit\InvestmentPoint.Admin\bin\Debug\net6.0\Microsoft.OpenApi.dll
+C:\New Project\Shubu Code\InvestmentPointGit\InvestmentPoint.Admin\bin\Debug\net6.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\New Project\Shubu Code\InvestmentPointGit\InvestmentPoint.Admin\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\New Project\Shubu Code\InvestmentPointGit\InvestmentPoint.Admin\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\New Project\Shubu Code\InvestmentPointGit\InvestmentPoint.Admin\bin\Debug\net6.0\InvestmentPoint.Admin.App.dll
+C:\New Project\Shubu Code\InvestmentPointGit\InvestmentPoint.Admin\bin\Debug\net6.0\InvestmentPoint.Admin.App.pdb
+C:\New Project\Shubu Code\InvestmentPointGit\InvestmentPoint.Admin\obj\Debug\net6.0\InvestmentPoint.Admin.MvcApplicationPartsAssemblyInfo.cs

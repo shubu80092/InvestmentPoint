@@ -66,3 +66,11 @@ C:\New Project\Shubu Code\InvestmentPointGit\InvestmentPoint.Admin.Persistence\o
 C:\New Project\Shubu Code\InvestmentPointGit\InvestmentPoint.Admin.Persistence\obj\Debug\net6.0\InvestmentPoint.Admin.Persistence.pdb
 C:\New Project\Shubu Code\InvestmentPointGit\InvestmentPoint.Admin.Persistence\obj\Debug\net6.0\InvestmentPoint.Admin.Persistence.genruntimeconfig.cache
 C:\New Project\Shubu Code\InvestmentPointGit\InvestmentPoint.Admin.Persistence\obj\Debug\net6.0\ref\InvestmentPoint.Admin.Persistence.dll
+C:\New Project\Shubu Code\InvestmentPointGit\InvestmentPoint.Admin.Persistence\bin\Debug\net6.0\InvestmentPoint.Admin.App.deps.json
+C:\New Project\Shubu Code\InvestmentPointGit\InvestmentPoint.Admin.Persistence\bin\Debug\net6.0\InvestmentPoint.Admin.App.runtimeconfig.json
+C:\New Project\Shubu Code\InvestmentPointGit\InvestmentPoint.Admin.Persistence\bin\Debug\net6.0\appsettings.Development.json
+C:\New Project\Shubu Code\InvestmentPointGit\InvestmentPoint.Admin.Persistence\bin\Debug\net6.0\appsettings.json
+C:\New Project\Shubu Code\InvestmentPointGit\InvestmentPoint.Admin.Persistence\bin\Debug\net6.0\InvestmentPoint.Admin.App.staticwebassets.runtime.json
+C:\New Project\Shubu Code\InvestmentPointGit\InvestmentPoint.Admin.Persistence\bin\Debug\net6.0\InvestmentPoint.Admin.App.exe
+C:\New Project\Shubu Code\InvestmentPointGit\InvestmentPoint.Admin.Persistence\bin\Debug\net6.0\InvestmentPoint.Admin.App.dll
+C:\New Project\Shubu Code\InvestmentPointGit\InvestmentPoint.Admin.Persistence\bin\Debug\net6.0\InvestmentPoint.Admin.App.pdb

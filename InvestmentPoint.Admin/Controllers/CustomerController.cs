@@ -17,11 +17,19 @@ namespace InvestmentPoint.Admin.Controllers
             _context = context;
         }
 
-        public async Task<IActionResult> ListCustomer()
+        public async Task<IActionResult> ListCustomer(int Id)
         {
 			try
 			{
-                return View(await _customer.ListCustomer());
+                ViewBag.Employees = new SelectList(await _context.Employees.ToListAsync(), "Id", "Name");
+                if(Id > 0)
+                {
+                     return View(await _customer.ListCustomer(Id));
+                }
+                else
+                {
+                    return View(await _customer.ListCustomer(Id));
+                }
             }
 			catch (Exception ex)
 			{

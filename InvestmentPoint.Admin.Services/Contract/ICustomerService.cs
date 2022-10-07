@@ -10,7 +10,7 @@ namespace InvestmentPoint.Admin.Services.Contract
 {
     public interface ICustomerService
     {
-       public  Task<List<CustomerModel>> ListCustomer();
+       public  Task<List<CustomerModel>> ListCustomer(int Id);
         public Task<bool> AddCustomer(CustomerModel model);
     }
 }

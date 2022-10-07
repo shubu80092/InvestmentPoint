@@ -27,7 +27,7 @@ namespace InvestmentPoint.Admin.Services.Implementation
         public async Task<Status> LoginAsync(AccountModel model)
         {
             var status = new Status();
-            var user = await userManager.FindByIdAsync(model.Username);
+            var user = await userManager.FindByNameAsync(model.Username);
             if(user == null)
             {
                 status.StatusCode = 0;
