@@ -1,6 +1,8 @@
 using InvestmentPoint.Admin.App.IUtilitiesServices;
 using InvestmentPoint.Admin.App.UtilitiesServices;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.IdentityModel.Tokens;
+using System.Text;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -12,8 +14,9 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 var builders = WebApplication.CreateBuilder(args);
+
 var connectionString = builder.Configuration.GetConnectionString("Defaultconnection") ?? throw new InvalidOperationException("Connection string 'IdentityTestContextConnection' not found.");
-var Key = "this is my test key";
+var Key = "this is my test key"; 
 builder.Services.AddSingleton<IJwtToken>(new JwtToken(Key));
 builder.Services.AddAuthentication(x =>
 {
@@ -22,6 +25,14 @@ builder.Services.AddAuthentication(x =>
 }).AddJwtBearer(x =>
 {
     x.RequireHttpsMetadata = false;
+    x.SaveToken = true;
+    x.TokenValidationParameters = new TokenValidationParameters
+    {
+        ValidateIssuerSigningKey = true,
+        IssuerSigningKey = new SymmetricSecurityKey(Encoding.ASCII.GetBytes(Key)),
+        ValidateIssuer = false,
+        ValidateAudience = false
+};
 });
 builder.Services.AddTransient<IJwtToken, JwtToken>();
 
