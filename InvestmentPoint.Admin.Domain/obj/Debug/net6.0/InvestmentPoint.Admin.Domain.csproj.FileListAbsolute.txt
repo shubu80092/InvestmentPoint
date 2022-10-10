@@ -46,12 +46,3 @@ C:\New Project\Shubu Code\InvestmentPointGit\InvestmentPoint.Admin.Domain\obj\De
 C:\New Project\Shubu Code\InvestmentPointGit\InvestmentPoint.Admin.Domain\obj\Debug\net6.0\refint\InvestmentPoint.Admin.Domain.dll
 C:\New Project\Shubu Code\InvestmentPointGit\InvestmentPoint.Admin.Domain\obj\Debug\net6.0\InvestmentPoint.Admin.Domain.pdb
 C:\New Project\Shubu Code\InvestmentPointGit\InvestmentPoint.Admin.Domain\obj\Debug\net6.0\ref\InvestmentPoint.Admin.Domain.dll
-C:\New Project\Shubu Code\InvestmentPointGit\InvestmentPoint.Admin.Domain\bin\Debug\net6.0\InvestmentPoint.Admin.App.deps.json
-C:\New Project\Shubu Code\InvestmentPointGit\InvestmentPoint.Admin.Domain\bin\Debug\net6.0\InvestmentPoint.Admin.App.runtimeconfig.json
-C:\New Project\Shubu Code\InvestmentPointGit\InvestmentPoint.Admin.Domain\bin\Debug\net6.0\appsettings.Development.json
-C:\New Project\Shubu Code\InvestmentPointGit\InvestmentPoint.Admin.Domain\bin\Debug\net6.0\appsettings.json
-C:\New Project\Shubu Code\InvestmentPointGit\InvestmentPoint.Admin.Domain\bin\Debug\net6.0\InvestmentPoint.Admin.App.staticwebassets.runtime.json
-C:\New Project\Shubu Code\InvestmentPointGit\InvestmentPoint.Admin.Domain\bin\Debug\net6.0\InvestmentPoint.Admin.App.exe
-C:\New Project\Shubu Code\InvestmentPointGit\InvestmentPoint.Admin.Domain\bin\Debug\net6.0\InvestmentPoint.Admin.App.dll
-C:\New Project\Shubu Code\InvestmentPointGit\InvestmentPoint.Admin.Domain\bin\Debug\net6.0\InvestmentPoint.Admin.App.pdb
-C:\New Project\Shubu Code\InvestmentPointGit\InvestmentPoint.Admin.Domain\obj\Debug\net6.0\InvestmentPoint.Admin.Domain.csproj.CopyComplete

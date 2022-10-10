@@ -1,9 +1,11 @@
-﻿using InvestmentPoint.Admin.App.DTO;
-using InvestmentPoint.Admin.App.IUtilitiesServices;
+﻿using InvestmentPoint.Admin.App.IUtilitiesServices;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using System.Net;
+using InvestmentPoint.Admin.Domain.Common;
+using InvestmentPoint.Admin.Persistence;
+using Microsoft.EntityFrameworkCore;
 
 namespace InvestmentPoint.Admin.App.Controllers
 {
@@ -12,25 +14,39 @@ namespace InvestmentPoint.Admin.App.Controllers
     [ApiController]
     public class AccountController : ControllerBase
     {
+        private readonly ApplicationDbContext _context;
         private readonly IJwtToken _jwtToken;
-        public AccountController(IJwtToken jwtToken)
+        public AccountController(IJwtToken jwtToken, ApplicationDbContext context)
         {
             this._jwtToken = jwtToken;
+            this._context = context;
         }
         [AllowAnonymous]
         [HttpPost("Authenticate")]
-        public IActionResult Authenticate([FromBody] LoginDTO model)
+        public IActionResult Authenticate(AccountModel model)
         {
             try
             {
-                var token =  _jwtToken.token(model);
-                if(token == null)
+                var user = _context.Employees.Where(x => x.Name == model.Username && x.Password == model.Password).FirstOrDefault();
+                if (!string.IsNullOrEmpty(user.Name))
                 {
-                    return Unauthorized();
+                    var Token = _jwtToken.token(model);
+                    if (Token == null)
+                    {
+                        return Ok(StatusCodes.Status401Unauthorized);
+                    }
+                //else
+                //{
+                //    return Ok(new {model.Username,model.Password,Token});
+                //}
+                    else
+                    {
+                        return Ok(new { user.Id, user.Name, user.Email, user.AadharNo, Token });
+                    }
                 }
                 else
                 {
-                    return Ok(token);
+                    return Ok(StatusCodes.Status401Unauthorized);
                 }
             }
             catch

@@ -1,23 +1,11 @@
 {
   "Version": 1,
-  "Hash": "LXlWokO4PA9hHi3XxbfwFfvWgjvNWh9qJb6wtDbE4Tc=",
+  "Hash": "HZzTI4h3WKWFXrDEEKsnRlM0mCEPUdHRo3F6G+lp8Is=",
   "Source": "InvestmentPoint.Admin",
   "BasePath": "_content/InvestmentPoint.Admin",
   "Mode": "Default",
   "ManifestType": "Build",
-  "ReferencedProjectsConfiguration": [
-    {
-      "Identity": "C:\\New Project\\Shubu Code\\InvestmentPointGit\\InvestmentPoint.Admin.App\\InvestmentPoint.Admin.App.csproj",
-      "Version": 2,
-      "Source": "InvestmentPoint.Admin.App",
-      "GetPublishAssetsTargets": "ComputeReferencedStaticWebAssetsPublishManifest;GetCurrentProjectPublishStaticWebAssetItems",
-      "AdditionalPublishProperties": "Configuration=Debug;Platform=AnyCPU",
-      "AdditionalPublishPropertiesToRemove": "WebPublishProfileFile;TargetFramework;RuntimeIdentifier",
-      "GetBuildAssetsTargets": "GetCurrentProjectBuildStaticWebAssetItems",
-      "AdditionalBuildProperties": "Configuration=Debug;Platform=AnyCPU",
-      "AdditionalBuildPropertiesToRemove": "WebPublishProfileFile;TargetFramework;RuntimeIdentifier"
-    }
-  ],
+  "ReferencedProjectsConfiguration": [],
   "DiscoveryPatterns": [
     {
       "Name": "InvestmentPoint.Admin\\wwwroot",
