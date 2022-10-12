@@ -34,7 +34,7 @@ namespace InvestmentPoint.Admin.App.UtilitiesServices
         //    this._context = context;
         //}
 
-        public  string token(AccountModel model)
+        public  string token(AccountModelDTO model)
         {
             
                 var tokenHandler = new JwtSecurityTokenHandler();
@@ -43,7 +43,7 @@ namespace InvestmentPoint.Admin.App.UtilitiesServices
                 {
                     Subject = new ClaimsIdentity(new Claim[]
                     {
-                    new Claim(ClaimTypes.Name, model.Username)
+                    new Claim(ClaimTypes.Email, model.Email)
                     }),
                     Expires = DateTime.UtcNow.AddHours(1),
                     SigningCredentials = new SigningCredentials(new SymmetricSecurityKey(tokenKey),

@@ -92,18 +92,18 @@ namespace InvestmentPoint.Admin.Controllers
             return RedirectToAction(nameof(Login));
         }
 
-        public async Task<IActionResult> reg()
-        {
-            var model = new RegistrationModel
-            {
-                Username = "admin",
-                Name = "shubu",
-                Email = "vishwakarma80092@gmail.com",
-                Password = "Admin@12345#"
-            };
-            model.Role = "admin";
-            var result = await _account.RegistrationAsync(model);
-            return Ok(result);
-        }
+        //public async Task<IActionResult> reg()
+        //{
+        //    var model = new RegistrationModel
+        //    {
+        //        Username = "admin",
+        //        Name = "shubu",
+        //        Email = "vishwakarma80092@gmail.com",
+        //        Password = "Admin@12345#"
+        //    };
+        //    model.Role = "admin";
+        //    var result = await _account.RegistrationAsync(model);
+        //    return Ok(result);
+        //}
     }
 }

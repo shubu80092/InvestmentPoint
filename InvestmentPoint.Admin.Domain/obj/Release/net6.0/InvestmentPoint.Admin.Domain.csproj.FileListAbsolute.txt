@@ -1,0 +1,12 @@
+C:\New Project\Shubu Code\InvestmentPointGit\InvestmentPoint.Admin.Domain\bin\Release\net6.0\InvestmentPoint.Admin.Domain.deps.json
+C:\New Project\Shubu Code\InvestmentPointGit\InvestmentPoint.Admin.Domain\bin\Release\net6.0\InvestmentPoint.Admin.Domain.dll
+C:\New Project\Shubu Code\InvestmentPointGit\InvestmentPoint.Admin.Domain\bin\Release\net6.0\InvestmentPoint.Admin.Domain.pdb
+C:\New Project\Shubu Code\InvestmentPointGit\InvestmentPoint.Admin.Domain\obj\Release\net6.0\InvestmentPoint.Admin.Domain.csproj.AssemblyReference.cache
+C:\New Project\Shubu Code\InvestmentPointGit\InvestmentPoint.Admin.Domain\obj\Release\net6.0\InvestmentPoint.Admin.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\New Project\Shubu Code\InvestmentPointGit\InvestmentPoint.Admin.Domain\obj\Release\net6.0\InvestmentPoint.Admin.Domain.AssemblyInfoInputs.cache
+C:\New Project\Shubu Code\InvestmentPointGit\InvestmentPoint.Admin.Domain\obj\Release\net6.0\InvestmentPoint.Admin.Domain.AssemblyInfo.cs
+C:\New Project\Shubu Code\InvestmentPointGit\InvestmentPoint.Admin.Domain\obj\Release\net6.0\InvestmentPoint.Admin.Domain.csproj.CoreCompileInputs.cache
+C:\New Project\Shubu Code\InvestmentPointGit\InvestmentPoint.Admin.Domain\obj\Release\net6.0\InvestmentPoint.Admin.Domain.dll
+C:\New Project\Shubu Code\InvestmentPointGit\InvestmentPoint.Admin.Domain\obj\Release\net6.0\refint\InvestmentPoint.Admin.Domain.dll
+C:\New Project\Shubu Code\InvestmentPointGit\InvestmentPoint.Admin.Domain\obj\Release\net6.0\InvestmentPoint.Admin.Domain.pdb
+C:\New Project\Shubu Code\InvestmentPointGit\InvestmentPoint.Admin.Domain\obj\Release\net6.0\ref\InvestmentPoint.Admin.Domain.dll

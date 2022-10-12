@@ -1,0 +1,17 @@
+C:\New Project\Shubu Code\InvestmentPointGit\InvestmentPoint.Admin.Services\bin\Release\net6.0\InvestmentPoint.Admin.Services.deps.json
+C:\New Project\Shubu Code\InvestmentPointGit\InvestmentPoint.Admin.Services\bin\Release\net6.0\InvestmentPoint.Admin.Services.dll
+C:\New Project\Shubu Code\InvestmentPointGit\InvestmentPoint.Admin.Services\bin\Release\net6.0\InvestmentPoint.Admin.Services.pdb
+C:\New Project\Shubu Code\InvestmentPointGit\InvestmentPoint.Admin.Services\bin\Release\net6.0\InvestmentPoint.Admin.Domain.dll
+C:\New Project\Shubu Code\InvestmentPointGit\InvestmentPoint.Admin.Services\bin\Release\net6.0\InvestmentPoint.Admin.Persistence.dll
+C:\New Project\Shubu Code\InvestmentPointGit\InvestmentPoint.Admin.Services\bin\Release\net6.0\InvestmentPoint.Admin.Domain.pdb
+C:\New Project\Shubu Code\InvestmentPointGit\InvestmentPoint.Admin.Services\bin\Release\net6.0\InvestmentPoint.Admin.Persistence.pdb
+C:\New Project\Shubu Code\InvestmentPointGit\InvestmentPoint.Admin.Services\obj\Release\net6.0\InvestmentPoint.Admin.Services.csproj.AssemblyReference.cache
+C:\New Project\Shubu Code\InvestmentPointGit\InvestmentPoint.Admin.Services\obj\Release\net6.0\InvestmentPoint.Admin.Services.GeneratedMSBuildEditorConfig.editorconfig
+C:\New Project\Shubu Code\InvestmentPointGit\InvestmentPoint.Admin.Services\obj\Release\net6.0\InvestmentPoint.Admin.Services.AssemblyInfoInputs.cache
+C:\New Project\Shubu Code\InvestmentPointGit\InvestmentPoint.Admin.Services\obj\Release\net6.0\InvestmentPoint.Admin.Services.AssemblyInfo.cs
+C:\New Project\Shubu Code\InvestmentPointGit\InvestmentPoint.Admin.Services\obj\Release\net6.0\InvestmentPoint.Admin.Services.csproj.CoreCompileInputs.cache
+C:\New Project\Shubu Code\InvestmentPointGit\InvestmentPoint.Admin.Services\obj\Release\net6.0\InvestmentPoint.Admin.Services.csproj.CopyComplete
+C:\New Project\Shubu Code\InvestmentPointGit\InvestmentPoint.Admin.Services\obj\Release\net6.0\InvestmentPoint.Admin.Services.dll
+C:\New Project\Shubu Code\InvestmentPointGit\InvestmentPoint.Admin.Services\obj\Release\net6.0\refint\InvestmentPoint.Admin.Services.dll
+C:\New Project\Shubu Code\InvestmentPointGit\InvestmentPoint.Admin.Services\obj\Release\net6.0\InvestmentPoint.Admin.Services.pdb
+C:\New Project\Shubu Code\InvestmentPointGit\InvestmentPoint.Admin.Services\obj\Release\net6.0\ref\InvestmentPoint.Admin.Services.dll

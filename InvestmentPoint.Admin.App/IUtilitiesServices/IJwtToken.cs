@@ -5,6 +5,6 @@ namespace InvestmentPoint.Admin.App.IUtilitiesServices
 {
     public interface IJwtToken
     {
-       string token(AccountModel model);
+       string token(AccountModelDTO model);
     }
 }
