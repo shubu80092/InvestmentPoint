@@ -43,7 +43,7 @@ namespace InvestmentPoint.Admin.Services.Implementation
                         Area = model.Area,
                         Address =model.Address,
                         TypeOfInvestment = model.TypeOfInvestment,
-                        MonthlyAmount = model.MonthlyAmount,
+                        Amount = model.Amount,
                         CollectionAmount = model.CollectionAmount,
                         AccountNumber = model.AccountNumber,
                         Password = model.Password,
@@ -93,7 +93,7 @@ namespace InvestmentPoint.Admin.Services.Implementation
                                 AreaName = a.AreaName,
                                 Address = c.Address,
                                 InvestmentName = ty.InvestmentName,
-                                MonthlyAmount = c.MonthlyAmount,
+                                Amount = c.Amount,
                                 CollectionAmount = c.CollectionAmount,
                                 AccountNumber = c.AccountNumber,
                                 Password = c.Password
@@ -116,7 +116,7 @@ namespace InvestmentPoint.Admin.Services.Implementation
                                 AreaName = a.AreaName,
                                 Address = c.Address,
                                 InvestmentName = ty.InvestmentName,
-                                MonthlyAmount = c.MonthlyAmount,
+                                Amount = c.Amount,
                                 CollectionAmount = c.CollectionAmount,
                                 AccountNumber = c.AccountNumber,
                                 Password = c.Password

@@ -17,5 +17,6 @@ namespace InvestmentPoint.Admin.Domain.Entites
         public string AadharNo { get; set; }
         public int AreaId { get; set; }
         public string Password { get; set; }
+        public DateTime CreateDate { get; set; }
     }
 }

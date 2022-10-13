@@ -45,23 +45,27 @@
         </div>
         <div class="form-group">
             <label for="exampleInputArea1" asp-for="Area">Area</label>
-            <select name="Area" class="form-control" asp-items="@ViewBag.Area" placeholder="---Select Area---"></select>
+            <select name="Area" class="form-control" asp-items="@ViewBag.Area">
+                <option value="none">---Select Area---</option>
+            </select>
         </div>
         <div class="form-group">
             <label for="exampleInputAddress1" asp-for="Address"></label>
             <input type="text" asp-for="Address" class="form-control" id="exampleInputAddress1" placeholder="Address">
         </div>
         <div class="form-group">
-            <label for="exampleInputTypeOfInvestment1" asp-for="TypeOfInvestment"></label>
-            <select name="TypeOfInvestment" class="form-control" asp-items="@ViewBag.Investment" ,"---Select Type Of Investment---",></select>
+            <label for="exampleInputMonthlyAmount1" asp-for="Amount">Amount</label>
+            <input type="text" asp-for="Amount" class="form-control" id="MonthlyA" placeholder="Amount">
         </div>
         <div class="form-group">
-            <label for="exampleInputMonthlyAmount1" asp-for="MonthlyAmount"></label>
-            <input type="text" asp-for="MonthlyAmount" class="form-control" id="exampleInputMonthlyAmount1" placeholder="Monthly Amount">
+            <label for="exampleInputTypeOfInvestment1" asp-for="TypeOfInvestment"></label>
+            <select name="TypeOfInvestment" id="TypeOfI" class="form-control" asp-items="@ViewBag.Investment">
+                <option value="none">---Select Type Of Investment---</option>
+            </select>
         </div>
         <div class="form-group">
             <label for="exampleInputCollectionAmount1" asp-for="CollectionAmount"></label>
-            <input type="text" asp-for="CollectionAmount" class="form-control" id="exampleInputCollectionAmount1" placeholder="Collection Amount">
+            <input type="text" asp-for="CollectionAmount" class="form-control" id="CollectionAmo" placeholder="Collection Amount">
         </div>
         <div class="form-group">
             <label for="exampleInputAccountNumber1" asp-for="AccountNumber"></label>
@@ -78,3 +82,4 @@
         <button type="submit" class="btn btn-primary">Submit</button>
     </div>
 </form>
+
