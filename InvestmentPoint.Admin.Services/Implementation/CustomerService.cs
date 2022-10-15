@@ -2,6 +2,7 @@
 using InvestmentPoint.Admin.Domain.Entites;
 using InvestmentPoint.Admin.Persistence;
 using InvestmentPoint.Admin.Services.Contract;
+using Microsoft.AspNetCore.Http.Features;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections;
@@ -33,20 +34,24 @@ namespace InvestmentPoint.Admin.Services.Implementation
             {
                 if (!string.IsNullOrEmpty(model.Email))
                 {
-                    Customer customer = new()
+                    Customer customer = new();
                     {
-                        Name = model.Name,
-                        Email = model.Email,
-                        MobileNo = model.MobileNo,
-                        AadharNo = model.AadharNo,
-                        PanNo = model.PanNo,
-                        Area = model.Area,
-                        Address =model.Address,
-                        TypeOfInvestment = model.TypeOfInvestment,
-                        Amount = model.Amount,
-                        CollectionAmount = model.CollectionAmount,
-                        AccountNumber = model.AccountNumber,
-                        Password = model.Password,
+                        customer.Name = model.Name;
+                        customer.Email = model.Email;
+                        customer.MobileNo = model.MobileNo;
+                        customer.AadharNo = model.AadharNo;
+                        customer.PanNo = model.PanNo;
+                        customer.Area = model.Area;
+                        customer.Address = model.Address;
+                        customer.TypeOfInvestment = model.TypeOfInvestment;
+                        customer.Amount = model.Amount;
+                        customer.CollectionAmount = model.CollectionAmount;
+                        customer.AccountNumber = model.AccountNumber;
+                        customer.Password = model.Password;
+                        customer.status = 1;
+                        customer.CreateDate = DateTime.Now.Date;
+                        customer.EMIDate = DateTime.Now.Date;
+                        customer.EndDate = DateTime.Now.Date.AddDays(30);
                     };
                     await _context.Customers.AddAsync(customer);
                     await _context.SaveChangesAsync();

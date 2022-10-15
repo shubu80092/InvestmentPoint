@@ -25,5 +25,7 @@ namespace InvestmentPoint.Admin.Domain.Entites
         public string Password { get; set; }
         public int status { get; set; }
         public DateTime CreateDate { get; set; }
+        public DateTime EMIDate { get; set; }
+        public DateTime EndDate { get; set; }
     }
 }

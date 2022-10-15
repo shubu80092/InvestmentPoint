@@ -43,7 +43,8 @@ namespace InvestmentPoint.Admin.Services.Implementation
                         Email = model.Email,
                         AadharNo = model.AadharNo,
                         AreaId = model.AreaId,
-                        Password = model.Password
+                        Password = model.Password,
+                        CreateDate = DateTime.Now.Date
                     };
                     await _context.Employees.AddAsync(employee);
                     await _context.SaveChangesAsync();

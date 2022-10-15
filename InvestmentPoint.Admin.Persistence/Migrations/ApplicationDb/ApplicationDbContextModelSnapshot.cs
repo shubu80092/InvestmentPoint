@@ -83,8 +83,14 @@ namespace InvestmentPoint.Admin.Persistence.Migrations.ApplicationDb
                     b.Property<DateTime>("CreateDate")
                         .HasColumnType("datetime2");
 
+                    b.Property<DateTime>("EMIDate")
+                        .HasColumnType("datetime2");
+
                     b.Property<string>("Email")
                         .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime>("EndDate")
+                        .HasColumnType("datetime2");
 
                     b.Property<string>("MobileNo")
                         .HasColumnType("nvarchar(max)");

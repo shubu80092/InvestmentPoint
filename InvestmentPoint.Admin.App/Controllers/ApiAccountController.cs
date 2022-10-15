@@ -56,7 +56,6 @@ namespace InvestmentPoint.Admin.App.Controllers
             }
             catch
             {
-
                 return Ok(StatusCodes.Status400BadRequest);
             }
         }

@@ -9,6 +9,7 @@ namespace InvestmentPoint.Admin.Services.APIContract
 {
     public interface IEmployeeService
     {
-        Task<List<EmployeeDTO>> CustomerList();
+        Task<List<CustomerDTO>> CurrentDateCustomer();
+        Task<List<CustomerDTO>> ListCustomer();
     }
 }

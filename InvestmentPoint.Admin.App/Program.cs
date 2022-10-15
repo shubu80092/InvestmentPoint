@@ -3,8 +3,8 @@ using InvestmentPoint.Admin.App.IUtilitiesServices;
 using InvestmentPoint.Admin.App.UtilitiesServices;
 using InvestmentPoint.Admin.Domain.Entites;
 using InvestmentPoint.Admin.Persistence;
-using InvestmentPoint.Admin.Services.Contract;
-using InvestmentPoint.Admin.Services.Implementation;
+using InvestmentPoint.Admin.Services.APIContract;
+using InvestmentPoint.Admin.Services.APIImplementation;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
@@ -17,7 +17,7 @@ var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
-builder.Services.AddEndpointsApiExplorer();
+//builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 var builders = WebApplication.CreateBuilder(args);
@@ -47,6 +47,7 @@ builder.Services.AddAuthentication(x =>
 };
 });
 
+builder.Services.AddTransient<IEmployeeService, EmployeeService>();
 
 var app = builder.Build();
 
@@ -64,7 +65,7 @@ if (app.Environment.IsDevelopment())
 //});
 
 app.UseHttpsRedirection();
-
+app.UseAuthentication();
 app.UseAuthorization();
 
 app.MapControllers();
