@@ -70,6 +70,29 @@ namespace InvestmentPoint.Admin.Services.APIImplementation
 			}
 		}
 
+		public async Task<List<EmployeeDTO1>> EmployeeProfile(int id)
+		{
+			try
+			{
+				var result = await (from emp in _context.Employees
+									where emp.Id == id
+									select new EmployeeDTO1
+									{
+										Id = emp.Id,
+										Name = emp.Name,
+										Email = emp.Email,
+										MobileNo = emp.MobileNo,
+										AadharNo = emp.AadharNo
+									}).ToListAsync();
+				return result;
+			}
+			catch (Exception ex)
+			{
+
+				throw new Exception("Server Error" + ex.Message);
+			}
+		}
+
 		public async Task<List<CustomerDTO>> ListCustomer()
 		{
 			try

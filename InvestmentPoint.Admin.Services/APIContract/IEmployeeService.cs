@@ -11,5 +11,6 @@ namespace InvestmentPoint.Admin.Services.APIContract
     {
         Task<List<CustomerDTO>> CurrentDateCustomer();
         Task<List<CustomerDTO>> ListCustomer();
+        Task<List<EmployeeDTO1>> EmployeeProfile(int id);
     }
 }

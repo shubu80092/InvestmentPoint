@@ -55,6 +55,56 @@ namespace InvestmentPoint.Admin.Services.Implementation
                     };
                     await _context.Customers.AddAsync(customer);
                     await _context.SaveChangesAsync();
+                    if (customer.TypeOfInvestment == 1)
+                    {
+                        for (var i = customer.CreateDate.Date; i <= customer.EndDate.Date; i = i.AddDays(1))
+                        {
+                            CustomersEMI customeremi = new()
+                            {
+                                Name = customer.Name,
+                                TypeOfInvest = customer.TypeOfInvestment,
+                                EMIAmc = customer.CollectionAmount,
+                                DateOfEMI = i,
+                                CustomerID = customer.Id
+                            };
+                            await _context.CustomersEMIs.AddAsync(customeremi);
+                            await _context.SaveChangesAsync();
+                        }
+
+                    }
+                    if (model.TypeOfInvestment == 2)
+                    {
+                        for (var i = customer.CreateDate.Date; i <= customer.EndDate.Date; i = i.AddDays(7))
+                        {
+                            CustomersEMI customeremi = new()
+                            {
+                                Name = customer.Name,
+                                TypeOfInvest = customer.TypeOfInvestment,
+                                EMIAmc = customer.CollectionAmount,
+                                DateOfEMI = i,
+                                CustomerID = customer.Id
+                            };
+                            await _context.CustomersEMIs.AddAsync(customeremi);
+                            await _context.SaveChangesAsync();
+                        }
+                    }
+                    if (model.TypeOfInvestment == 3)
+                    {
+                        for (var i = customer.CreateDate.Date; i <= customer.EndDate.Date; i = i.AddDays(30))
+                        {
+                            CustomersEMI customeremi = new()
+                            {
+                                Name = customer.Name,
+                                TypeOfInvest = customer.TypeOfInvestment,
+                                EMIAmc = customer.CollectionAmount,
+                                DateOfEMI = i,
+                                CustomerID = customer.Id
+                            };
+                            await _context.CustomersEMIs.AddAsync(customeremi);
+                            await _context.SaveChangesAsync();
+                        }
+                    }
+                    
                     return true;
                 }
                 else

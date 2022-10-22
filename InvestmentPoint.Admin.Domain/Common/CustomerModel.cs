@@ -19,8 +19,8 @@ namespace InvestmentPoint.Admin.Domain.Common
         public string Address { get; set; }
         public int TypeOfInvestment { get; set; }
         public string InvestmentName { get; set; }
-        public string Amount { get; set; }
-        public string CollectionAmount { get; set; }
+        public int Amount { get; set; }
+        public int CollectionAmount { get; set; }
         public string AccountNumber { get; set; }
         public string Password { get; set; }
     }

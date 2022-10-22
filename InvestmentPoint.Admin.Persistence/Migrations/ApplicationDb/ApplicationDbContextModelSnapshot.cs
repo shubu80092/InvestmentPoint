@@ -71,14 +71,14 @@ namespace InvestmentPoint.Admin.Persistence.Migrations.ApplicationDb
                     b.Property<string>("Address")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("Amount")
-                        .HasColumnType("nvarchar(max)");
+                    b.Property<int>("Amount")
+                        .HasColumnType("int");
 
                     b.Property<int>("Area")
                         .HasColumnType("int");
 
-                    b.Property<string>("CollectionAmount")
-                        .HasColumnType("nvarchar(max)");
+                    b.Property<int>("CollectionAmount")
+                        .HasColumnType("int");
 
                     b.Property<DateTime>("CreateDate")
                         .HasColumnType("datetime2");
@@ -113,6 +113,37 @@ namespace InvestmentPoint.Admin.Persistence.Migrations.ApplicationDb
                     b.HasKey("Id");
 
                     b.ToTable("Customers");
+                });
+
+            modelBuilder.Entity("InvestmentPoint.Admin.Domain.Entites.CustomersEMI", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
+
+                    b.Property<int>("BalanceAmc")
+                        .HasColumnType("int");
+
+                    b.Property<int>("CustomerID")
+                        .HasColumnType("int");
+
+                    b.Property<DateTime>("DateOfEMI")
+                        .HasColumnType("datetime2");
+
+                    b.Property<int>("EMIAmc")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Name")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("TypeOfInvest")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("CustomersEMIs");
                 });
 
             modelBuilder.Entity("InvestmentPoint.Admin.Domain.Entites.Employee", b =>

@@ -17,5 +17,6 @@ namespace InvestmentPoint.Admin.Persistence
         public DbSet<TypeOfInvestment> TypeofInvestments { get; set; }
         public DbSet<Area> Areas { get; set; }
         public DbSet<AllStatus> Status { get; set; }
+        public DbSet<CustomersEMI> CustomersEMIs { get; set; }
     }
 }

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "00OsZZ7gH58WqQ7C36bPAtvVvyOUvkLUkP4CNO4kBic=",
+  "Hash": "ZAKgCxtjsSLp23gRSFS20BUZJzQD47jRmkekdjfHSoY=",
   "Source": "InvestmentPoint.Admin",
   "BasePath": "_content/InvestmentPoint.Admin",
   "Mode": "Default",
@@ -41835,6 +41835,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\assets\\plugins\\uplot\\uPlot.min.css"
+    },
+    {
+      "Identity": "C:\\New Project\\Shubu Code\\InvestmentPointGit\\InvestmentPoint.Admin\\wwwroot\\CustomJS\\CustomOperations.js",
+      "SourceId": "InvestmentPoint.Admin",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\New Project\\Shubu Code\\InvestmentPointGit\\InvestmentPoint.Admin\\wwwroot\\",
+      "BasePath": "_content/InvestmentPoint.Admin",
+      "RelativePath": "CustomJS/CustomOperations.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\CustomJS\\CustomOperations.js"
     },
     {
       "Identity": "C:\\New Project\\Shubu Code\\InvestmentPointGit\\InvestmentPoint.Admin\\wwwroot\\js\\site.js",

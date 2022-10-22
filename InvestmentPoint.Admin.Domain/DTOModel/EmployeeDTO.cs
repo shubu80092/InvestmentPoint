@@ -17,4 +17,12 @@ namespace InvestmentPoint.Admin.Domain.DTOModel
         public string AreaName { get; set; }
         public string Password { get; set; }
     }
+    public class EmployeeDTO1
+    {
+        public int Id { get; set; }
+        public string Name { get; set; }
+        public string Email { get; set; }
+        public string MobileNo { get; set; }
+        public string AadharNo { get; set; }
+    }
 }

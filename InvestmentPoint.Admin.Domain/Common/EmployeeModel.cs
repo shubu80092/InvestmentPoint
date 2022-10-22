@@ -17,4 +17,5 @@ namespace InvestmentPoint.Admin.Domain.Common
         public string AreaName { get; set; }
         public string Password { get; set; }
     }
+
 }

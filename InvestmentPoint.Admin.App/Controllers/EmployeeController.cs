@@ -1,4 +1,6 @@
-﻿using InvestmentPoint.Admin.Domain.Common;
+﻿using InvestmentPoint.Admin.App.UtilitiesServices;
+using InvestmentPoint.Admin.Domain.Common;
+using InvestmentPoint.Admin.Domain.DTOModel;
 using InvestmentPoint.Admin.Services.APIContract;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
@@ -72,6 +74,40 @@ namespace InvestmentPoint.Admin.App.Controllers
             {
 
                 return BadRequest(StatusCodes.Status500InternalServerError);
+            }
+        }
+        [HttpGet]
+        [Route("EmployeeProfile/{id}")]
+        public async Task<IActionResult> EmployeeProfile(int id)
+        {
+            var response = new Response<List<EmployeeDTO1>>(); 
+            try
+            {
+                var data = await _employee.EmployeeProfile(id);
+                if(data != null)
+                {
+                    response.Succeeded = true;
+                    response.StatusCode = StatusCodes.Status200OK;
+                    response.Status = "Success";
+                    response.Message = "Employee Profile data Here.";
+                    response.Data = data;
+                    return Ok(response);
+                }
+                else
+                {
+                    response.Succeeded = false;
+                    response.StatusCode = StatusCodes.Status404NotFound;
+                    response.Status = "Faild";
+                    response.Message = "Employee Data Not Found";
+                    return Ok(response);
+                }
+            }
+            catch
+            {
+                response.StatusCode = StatusCodes.Status500InternalServerError;
+                response.Error = "Server Error";
+                return Ok(response);
+                
             }
         }
     }

@@ -23,14 +23,13 @@ namespace InvestmentPoint.Admin.App.Controllers
         }
         [AllowAnonymous]
         [HttpPost]
-        //[Route("~/")]
         [Route("EmployeeLogin")]
         public IActionResult EmployeeLogin(AccountModelDTO model)
         {
             try
             {
                 var status = new Status();
-                var user = _context.Employees.Where(x => x.Email == model.Email && x.Password == model.Password).FirstOrDefault();
+                var user = _context.Employees.Where(x => x.Email == model.Email ? x.MobileNo == model.Email : x.Password == model.Password).FirstOrDefault();
                 if(user != null)
                 {
                     var Token = _jwtToken.token(model);
@@ -61,14 +60,13 @@ namespace InvestmentPoint.Admin.App.Controllers
         }
         [AllowAnonymous]
         [HttpPost]
-        //[Route("~/")]
         [Route("CustomerLogin")]
         public IActionResult CustomerLogin(AccountModelDTO model)
         {
             try
             {
                 var status = new Status();
-                var user = _context.Customers.Where(x => x.Email == model.Email && x.Password == model.Password).FirstOrDefault();
+                var user = _context.Customers.Where(x => x.Email == model.Email || x.MobileNo == model.Email  &&  x.Password == model.Password).FirstOrDefault();
                 if (user != null)
                 {
                     var Token = _jwtToken.token(model);
