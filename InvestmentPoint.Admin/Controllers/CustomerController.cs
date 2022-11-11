@@ -48,7 +48,6 @@ namespace InvestmentPoint.Admin.Controllers
             }
             catch (Exception ex)
             {
-
                 throw new Exception("Server Error" + ex.Message);
             }
         }
@@ -73,6 +72,20 @@ namespace InvestmentPoint.Admin.Controllers
                     }
                 }
                 return View();
+            }
+            catch (Exception ex)
+            {
+
+                throw new Exception("Server Error" + ex.Message);
+            }
+        }
+
+        public async Task<IActionResult> Report()
+        {
+            try
+            {
+                return View(await _customer.CustomerReport());
+               
             }
             catch (Exception ex)
             {

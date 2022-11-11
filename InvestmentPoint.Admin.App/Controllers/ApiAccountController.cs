@@ -29,8 +29,9 @@ namespace InvestmentPoint.Admin.App.Controllers
             try
             {
                 var status = new Status();
-                var user = _context.Employees.Where(x => x.Email == model.Email ? x.MobileNo == model.Email : x.Password == model.Password).FirstOrDefault();
-                if(user != null)
+                var user = _context.Employees.Where(x => x.Email == model.Email || x.MobileNo == model.Email).Where(x => x.Password == model.Password).FirstOrDefault();
+                //var user = _context.Customers.FirstOrDefault(x => x.Email == model.Email && x.Password == model.Password);
+                if (user != null)
                 {
                     var Token = _jwtToken.token(model);
                     if (Token == null)
@@ -66,7 +67,8 @@ namespace InvestmentPoint.Admin.App.Controllers
             try
             {
                 var status = new Status();
-                var user = _context.Customers.Where(x => x.Email == model.Email || x.MobileNo == model.Email  &&  x.Password == model.Password).FirstOrDefault();
+                var user = _context.Customers.Where(x => x.Email == model.Email || x.MobileNo == model.Email).Where(x=>x.Password==model.Password).FirstOrDefault();
+                //var user = _context.Customers.FirstOrDefault(x => x.Email == model.Email && x.Password == model.Password);
                 if (user != null)
                 {
                     var Token = _jwtToken.token(model);

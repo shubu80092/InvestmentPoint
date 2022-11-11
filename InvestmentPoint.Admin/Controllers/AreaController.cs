@@ -48,7 +48,7 @@ namespace InvestmentPoint.Admin.Controllers
                     bool check = await _area.AddArea(model);
                     if (check)
                     {
-                        TempData["msg"] = "Area Add Successfully";
+                        return RedirectToAction("ListArea");
                     }
                     else
                     {

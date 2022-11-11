@@ -13,7 +13,9 @@ namespace InvestmentPoint.Admin.Domain.DTOModel
         public string Email { get; set; }
         public string MobileNo { get; set; }
         public string Address { get; set; }
-        public int CollectionAmount { get; set; }
+        public double CollectionAmount { get; set; }
+        public double BalanceAmc { get; set; }
+        public double Advance { get; set; }
         public string status { get; set; }
     }
     public class CustomerDTO1
@@ -29,8 +31,8 @@ namespace InvestmentPoint.Admin.Domain.DTOModel
         public string Address { get; set; }
         //public int TypeOfInvestment { get; set; }
         public string TypeOfInvestmentName { get; set; }
-        public int Amount { get; set; }
-        public int CollectionAmount { get; set; }
+        public double Amount { get; set; }
+        public double CollectionAmount { get; set; }
         public string AccountNumber { get; set; }
         //public string Password { get; set; }
     }

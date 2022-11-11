@@ -19,13 +19,18 @@ namespace InvestmentPoint.Admin.Domain.Entites
         public int Area { get; set; }
         public string Address { get; set; }
         public int TypeOfInvestment { get; set; }
-        public int Amount { get; set; }
-        public int CollectionAmount { get; set; }
+        public double Amount { get; set; }
+        public double CollectionAmount { get; set; }
         public string AccountNumber { get; set; }
         public string Password { get; set; }
         public int status { get; set; }
         public DateTime CreateDate { get; set; }
-        public DateTime EMIDate { get; set; }
+        public int CodeNo { get; set; }
+        public string CardNo { get; set; }
+        public double BalanceAmc { get; set; }
+        public double Advance { get; set; }
+        public double TotalDepositeAmount { get; set; }
+        public DateTime StartDate { get; set; }
         public DateTime EndDate { get; set; }
     }
 }

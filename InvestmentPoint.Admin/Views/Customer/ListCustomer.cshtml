@@ -1,7 +1,7 @@
 ﻿@using InvestmentPoint.Admin.Domain.Common
 @model IEnumerable<CustomerModel>
 @{
-    ViewData["Title"] = "ListCustomer";
+    ViewData["Title"] = "List Customer";
     Layout = "~/Views/Shared/Master/_AdminLayout.cshtml";
 }
 
@@ -90,11 +90,11 @@
                         <td>@item.AccountNumber</td>
                         <td>@item.Password</td>
                         <td>
-                            <a class="btn btn-info btn-sm" href="@Url.Action("EditEmployee","Employee", new{Id = item.Id})">
+                            @*<a class="btn btn-info btn-sm" href="@Url.Action("EditEmployee","Employee", new{Id = item.Id})">
                                 <i class="fas fa-pencil-alt">
                                 </i>
                                 Edit
-                            </a>
+                            </a>*@
                             <a class="btn btn-danger btn-sm" href="@Url.Action("DeleteEmployee","Employee", new{Id=item.Id})">
                                 <i class="fas fa-trash">
                                 </i>

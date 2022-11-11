@@ -12,5 +12,6 @@ namespace InvestmentPoint.Admin.Services.Contract
     {
        public  Task<List<CustomerModel>> ListCustomer(int Id);
         public Task<bool> AddCustomer(CustomerModel model);
+        public Task<List<ReportModel>> CustomerReport();
     }
 }

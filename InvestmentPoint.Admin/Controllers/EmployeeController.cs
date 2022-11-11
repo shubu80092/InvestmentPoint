@@ -1,4 +1,5 @@
-﻿using InvestmentPoint.Admin.Domain.Common;
+﻿
+using InvestmentPoint.Admin.Domain.Common;
 using InvestmentPoint.Admin.Domain.Entites;
 using InvestmentPoint.Admin.Persistence;
 using InvestmentPoint.Admin.Services.Contract;
@@ -55,7 +56,6 @@ namespace InvestmentPoint.Admin.Controllers
             }
             catch (Exception ex)
             {
-
                 throw new Exception("Server Error" + ex.Message);
             }
         }
@@ -96,8 +96,13 @@ namespace InvestmentPoint.Admin.Controllers
         {
             try
             {
+                var item = await _context.Areas.ToListAsync();
+                if(item != null) 
+                {
+                    ViewBag.Area = item;
+                }
                 var data = await _context.Employees.FirstOrDefaultAsync(x => x.Id == id);
-                if(!string.IsNullOrEmpty(data.Email))
+                if (!string.IsNullOrEmpty(data.Email))
                 {
                     return View(data);
                 }
@@ -114,9 +119,22 @@ namespace InvestmentPoint.Admin.Controllers
         {
             try
             {
+                var item = await _context.Areas.ToListAsync();
+                if (item != null)
+                {
+                    ViewBag.Area = item;
+                }
                 if (ModelState.IsValid)
                 {
-                    await _employee.EditEmployee(id, employee);
+                    bool check = await _employee.EditEmployee(id, employee);
+                    if (check)
+                    {
+                        return RedirectToAction("ListEmployee");
+                    }
+                    else
+                    {
+                        return View();
+                    }
                 }
                 return View();
             }

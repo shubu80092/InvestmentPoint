@@ -24,29 +24,35 @@ namespace InvestmentPoint.Admin.App.Controllers
         [Route("CurrentDateCustomer")]
         public async Task<IActionResult> CurrentDateCustomer()
         {
+            var response = new Response<List<CustomerDTO>>();
             try
             {
+                
                 var status = new Status();
-                var result = await _employee.CurrentDateCustomer();
-                    if (result != null)
+                var data = await _employee.CurrentDateCustomer();
+                    if (data != null)
                     {
-                        
-                        status.StatusCode = StatusCodes.Status200OK;
-                        status.Message = "Success";
-                        return Ok(new { result, status });
+
+                    response.Succeeded = true;
+                    response.StatusCode = StatusCodes.Status200OK;
+                    response.Status = "Success";
+                    response.Message = "Current Date All Customer Here";
+                    response.Data = data;
+                    return Ok(response);
                     }
                     else
                     {
-                        status.StatusCode=StatusCodes.Status404NotFound;
-                         status.Message = "Data Does't Exists";
-                        return Ok(status);
-                    }
+                    response.Succeeded = true;
+                    response.StatusCode = StatusCodes.Status404NotFound;
+                    response.Message = "Customer Data Not Found";
+                    return Ok(response);
+                }
                 
             }
             catch
             {
-
-                return BadRequest(StatusCodes.Status500InternalServerError);
+                response.Error = "Server Error";
+                return BadRequest(response);
             }
         }
         [HttpGet]
@@ -110,5 +116,21 @@ namespace InvestmentPoint.Admin.App.Controllers
                 
             }
         }
+        //[HttpPost]
+        //[Route("EmployeeEMIPost")]
+        //public async Task<IActionResult> EmployeeEMIPost(CustomerDTO model)
+        //{
+        //    try
+        //    {
+        //        if (ModelState.IsValid)
+        //        {
+        //            bool check = _employee.CustomerEMISave(model);
+        //        } 
+        //    }
+        //    catch
+        //    {
+        //        throw;
+        //    }
+        //}
     }
 }

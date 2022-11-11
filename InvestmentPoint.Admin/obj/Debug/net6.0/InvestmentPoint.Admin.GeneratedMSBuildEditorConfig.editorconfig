@@ -27,6 +27,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXJlYVxBZGRBcmVhLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/New Project/Shubu Code/InvestmentPointGit/InvestmentPoint.Admin/Views/Area/EditArea.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXJlYVxFZGl0QXJlYS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/New Project/Shubu Code/InvestmentPointGit/InvestmentPoint.Admin/Views/Area/ListArea.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXJlYVxMaXN0QXJlYS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
@@ -39,8 +43,16 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3VzdG9tZXJcTGlzdEN1c3RvbWVyLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/New Project/Shubu Code/InvestmentPointGit/InvestmentPoint.Admin/Views/Customer/Report.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3VzdG9tZXJcUmVwb3J0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/New Project/Shubu Code/InvestmentPointGit/InvestmentPoint.Admin/Views/Employee/AddEmployee.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1wbG95ZWVcQWRkRW1wbG95ZWUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/New Project/Shubu Code/InvestmentPointGit/InvestmentPoint.Admin/Views/Employee/EditEmployee.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1wbG95ZWVcRWRpdEVtcGxveWVlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/New Project/Shubu Code/InvestmentPointGit/InvestmentPoint.Admin/Views/Employee/ListEmployee.cshtml]
@@ -57,6 +69,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/New Project/Shubu Code/InvestmentPointGit/InvestmentPoint.Admin/Views/InvestmentType/AddInvestType.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW52ZXN0bWVudFR5cGVcQWRkSW52ZXN0VHlwZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/New Project/Shubu Code/InvestmentPointGit/InvestmentPoint.Admin/Views/InvestmentType/EditInvestType.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW52ZXN0bWVudFR5cGVcRWRpdEludmVzdFR5cGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/New Project/Shubu Code/InvestmentPointGit/InvestmentPoint.Admin/Views/InvestmentType/ListInvestType.cshtml]

@@ -71,19 +71,28 @@ namespace InvestmentPoint.Admin.Persistence.Migrations.ApplicationDb
                     b.Property<string>("Address")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int>("Amount")
-                        .HasColumnType("int");
+                    b.Property<double>("Advance")
+                        .HasColumnType("float");
+
+                    b.Property<double>("Amount")
+                        .HasColumnType("float");
 
                     b.Property<int>("Area")
                         .HasColumnType("int");
 
-                    b.Property<int>("CollectionAmount")
+                    b.Property<double>("BalanceAmc")
+                        .HasColumnType("float");
+
+                    b.Property<string>("CardNo")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("CodeNo")
                         .HasColumnType("int");
 
-                    b.Property<DateTime>("CreateDate")
-                        .HasColumnType("datetime2");
+                    b.Property<double>("CollectionAmount")
+                        .HasColumnType("float");
 
-                    b.Property<DateTime>("EMIDate")
+                    b.Property<DateTime>("CreateDate")
                         .HasColumnType("datetime2");
 
                     b.Property<string>("Email")
@@ -104,6 +113,12 @@ namespace InvestmentPoint.Admin.Persistence.Migrations.ApplicationDb
                     b.Property<string>("Password")
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<DateTime>("StartDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<double>("TotalDepositeAmount")
+                        .HasColumnType("float");
+
                     b.Property<int>("TypeOfInvestment")
                         .HasColumnType("int");
 
@@ -123,8 +138,11 @@ namespace InvestmentPoint.Admin.Persistence.Migrations.ApplicationDb
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
 
-                    b.Property<int>("BalanceAmc")
-                        .HasColumnType("int");
+                    b.Property<double>("Ammount")
+                        .HasColumnType("float");
+
+                    b.Property<double>("CurrentOutstanding")
+                        .HasColumnType("float");
 
                     b.Property<int>("CustomerID")
                         .HasColumnType("int");
@@ -132,13 +150,25 @@ namespace InvestmentPoint.Admin.Persistence.Migrations.ApplicationDb
                     b.Property<DateTime>("DateOfEMI")
                         .HasColumnType("datetime2");
 
-                    b.Property<int>("EMIAmc")
+                    b.Property<DateTime>("DipositeDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<double>("EMIAmc")
+                        .HasColumnType("float");
+
+                    b.Property<DateTime>("EMIDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<int>("MonthlyNoOfEMIs")
                         .HasColumnType("int");
 
                     b.Property<string>("Name")
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<int>("TypeOfInvest")
+                        .HasColumnType("int");
+
+                    b.Property<int>("status")
                         .HasColumnType("int");
 
                     b.HasKey("Id");
@@ -178,6 +208,40 @@ namespace InvestmentPoint.Admin.Persistence.Migrations.ApplicationDb
                     b.HasKey("Id");
 
                     b.ToTable("Employees");
+                });
+
+            modelBuilder.Entity("InvestmentPoint.Admin.Domain.Entites.transaction", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
+
+                    b.Property<double>("Advance")
+                        .HasColumnType("float");
+
+                    b.Property<double>("BalanceAmc")
+                        .HasColumnType("float");
+
+                    b.Property<int>("CustomerId")
+                        .HasColumnType("int");
+
+                    b.Property<double>("DepositeAmc")
+                        .HasColumnType("float");
+
+                    b.Property<DateTime>("DepositeDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<int>("InvestType")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Name")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("transactions");
                 });
 
             modelBuilder.Entity("InvestmentPoint.Admin.Domain.Entites.TypeOfInvestment", b =>
